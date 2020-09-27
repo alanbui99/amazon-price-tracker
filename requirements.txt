@@ -25,11 +25,13 @@ numpy==1.18.1
 pandas==1.0.0
 pipenv==2018.11.26
 python-dateutil==2.8.1
+python-dotenv==0.14.0
 python-facebook-bot==0.1.14
 pytz==2019.3
 requests==2.22.0
 scikit-learn==0.22.2.post1
 scipy==1.4.1
+selenium==3.141.0
 six==1.14.0
 slackclient==2.5.0
 soupsieve==1.9.5
