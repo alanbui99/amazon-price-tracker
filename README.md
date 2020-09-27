@@ -17,7 +17,7 @@ A Python script to:
 ## Future Improvements
 <ul>
   <li>Build a website for the web scraper with Flask and SQL</li>
-  <li>Deploy and scheduled web scraping on Heroku</li>
+  <li>Deploy and schedule web scraping on Heroku</li>
 
 </ul>
 
