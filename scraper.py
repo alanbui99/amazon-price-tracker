@@ -70,7 +70,7 @@ def send_mail(details):
 
     subject = 'Lower price for ' + details['item']
     nl = '\n'
-    body = f"Price for the product is now {details['current_price']}.{nl} Check the Amazon link: {URL}"
+    body = f"Price for the product is now ${details['current_price']}.{nl} Check the Amazon link: {URL}"
 
     msg = f"Subject: {subject}\n\n {body}"
 
