@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import smtplib
 import time
 import os
-import dotenv
+from dotenv import load_dotenv
 import random
 
 # get user input
@@ -63,13 +63,14 @@ def send_mail(details):
     server.starttls()
     server.ehlo()
 
+    load_dotenv()
     sender_email = os.getenv('EMAIL_SENDER')
     app_password = os.getenv('APP_PASSWORD')
     server.login(sender_email, app_password)
 
     subject = 'Lower price for ' + details['item']
     nl = '\n'
-    body = f"Price for the product is now {details['current_price']}.{nl}Check the Amazon link {URL}"
+    body = f"Price for the product is now {details['current_price']}.{nl} Check the Amazon link: {URL}"
 
     msg = f"Subject: {subject}\n\n {body}"
 
