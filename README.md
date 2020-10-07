@@ -1,4 +1,7 @@
 # Amazon Price Tracker
+## Purpose
+Have you ever been on the budget while having a Amazon item on your wishlist? This project will notify you of when your Amazon wishlist item drop to a desirable price.
+## Features
 A Python script to:
 <ul>
   <li>track the price of an item on Amazon.com using requests and beautifulsoup</li>
